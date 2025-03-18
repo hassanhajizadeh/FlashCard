@@ -72,7 +72,6 @@ function next(){
     front_up = true;
     current++;
     show();
-    console.log(current);
     if(current==9){
         next_btn.disabled=true;
         next_btn.style.cursor="not-allowed"
@@ -89,7 +88,6 @@ function previous(){
     front_up = true;
     current--;
     show();
-    console.log(current);
     if(current==0){
         previous_btn.disabled = true;
         previous_btn.style.cursor="not-allowed"
