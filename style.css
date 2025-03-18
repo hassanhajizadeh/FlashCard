@@ -1,0 +1,83 @@
+:root {
+    --primary-color: rgb(16, 163, 116); /* Main accent color */
+    --secondary-color: rgb(37, 223, 164); /* Secondary accent color */
+    --background-gradient: linear-gradient(to top, black, rgb(21, 32, 43));
+    --flashcard-gradient: radial-gradient(black 50%, rgb(12, 19, 26));
+    --text-color: #eeeeee;
+    --border-color: var(--primary-color);
+    --hamburger-hover: rgba(0, 0, 0, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    perspective: 1000px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--background-gradient);
+    color: var(--text-color);
+    padding: 30px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#flashcard {
+    display: flex;
+    font-family: serif;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 3px;
+    height: 280px;
+    width: 350px;
+    border: 3px solid var(--primary-color);
+    border-radius: .4rem;
+    background: var(--flashcard-gradient);
+    color: whitesmoke;
+    font-size: 15pt;
+    padding: 20px 30px;
+    transition: .6s ease all;
+    text-transform: capitalize;
+    overflow: auto;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: .4rem;
+    color: var(--text-color);
+    margin: 0px 15px;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+    transition: .3s ease all;
+}
